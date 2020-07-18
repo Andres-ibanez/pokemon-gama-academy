@@ -6,7 +6,7 @@ export const ContainerPokemons = () => {
     const [pokemons, setpokemons] = useState([])
 
     const getPokemons = async() => {
-        const url = 'https://pokeapi.co/api/v2/pokemon?limit=20';
+        const url = 'https://pokeapi.co/api/v2/pokemon?limit=40';
         const response = await fetch( url );
         const { results } = await response.json();
     
